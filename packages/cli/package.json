@@ -21,7 +21,7 @@
     "format:check": "biome ci .",
     "lint": "eslint . --quiet",
     "lintfix": "eslint . --fix",
-    "start": "run-script-os",
+    "start": "WEBHOOK_TUNNEL_URL=https://n8n-ubicuas.onrender.com node ./bin/n8n",
     "start:default": "cd bin && ./n8n",
     "start:windows": "cd bin && n8n",
     "test": "pnpm test:sqlite",
